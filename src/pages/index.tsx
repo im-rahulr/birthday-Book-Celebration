@@ -13,6 +13,7 @@ type TimeLeft = {
 };
 
 const PHOTOS = [
+  "/photos/IMG-20250527-WA0039.jpg",
   "/photos/IMG-20250527-WA0169.jpg",
   "/photos/IMG-20250527-WA0207.jpg",
   "/photos/one.png",
@@ -67,7 +68,7 @@ export default function HomePage() {
           <Card className="w-full">
             <CardHeader className="text-center space-y-3">
               <CardTitle className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight">
-                Ashwani&apos;s Birthday
+                Ashwani's Birthday
               </CardTitle>
               <p className="text-base sm:text-lg text-muted leading-relaxed">
                 Celebrating on {" "}
@@ -126,11 +127,11 @@ export default function HomePage() {
               Memories
             </h2>
             <p className="text-base text-muted/80">
-              Moments we&apos;ve shared
+              Moments we've shared
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 auto-rows-max">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 auto-rows-[200px]">
             {/* Top left - large */}
             <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden hover:border-white/20 transition-all duration-300 sm:col-span-1 sm:row-span-2">
               <Image
@@ -143,7 +144,7 @@ export default function HomePage() {
               />
             </div>
 
-            {/* Top right - large */}
+            {/* Top middle - large */}
             <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden hover:border-white/20 transition-all duration-300 sm:col-span-1 sm:row-span-2">
               <Image
                 src={PHOTOS[1]}
@@ -155,7 +156,7 @@ export default function HomePage() {
               />
             </div>
 
-            {/* Middle left - medium */}
+            {/* Top right - large */}
             <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden hover:border-white/20 transition-all duration-300 sm:col-span-1 sm:row-span-2">
               <Image
                 src={PHOTOS[2]}
@@ -166,7 +167,7 @@ export default function HomePage() {
               />
             </div>
 
-            {/* Middle right - small */}
+            {/* Bottom left - small */}
             <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden hover:border-white/20 transition-all duration-300 sm:col-span-1">
               <Image
                 src={PHOTOS[3]}
@@ -177,11 +178,22 @@ export default function HomePage() {
               />
             </div>
 
-            {/* Bottom right - small */}
+            {/* Bottom middle - small */}
             <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden hover:border-white/20 transition-all duration-300 sm:col-span-1">
               <Image
                 src={PHOTOS[4]}
                 alt="Memory 5"
+                width={300}
+                height={300}
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+
+            {/* Bottom right - small */}
+            <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden hover:border-white/20 transition-all duration-300 sm:col-span-1">
+              <Image
+                src={PHOTOS[5]}
+                alt="Memory 6"
                 width={300}
                 height={300}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
