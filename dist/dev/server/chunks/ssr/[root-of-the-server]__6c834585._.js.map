@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/rahul/Downloads/Ash_birthday/birthday-countdown/src/pages/_document.tsx"],"sourcesContent":["import { Html, Head, Main, NextScript } from \"next/document\";\r\nimport Script from \"next/script\";\r\n\r\nexport default function Document() {\r\n  return (\r\n    <Html lang=\"en\">\r\n      <Head>\r\n        {process.env.NODE_ENV === \"development\" && (\r\n          <Script\r\n            src=\"//unpkg.com/react-grab/dist/index.global.js\"\r\n            crossOrigin=\"anonymous\"\r\n            strategy=\"beforeInteractive\"\r\n          />\r\n        )}\r\n      </Head>\r\n      <body>\r\n        <Main />\r\n        <NextScript />\r\n      </body>\r\n    </Html>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;AAAA;AACA;;;;AAEe,SAAS;IACtB,qBACE,qKAAC,iIAAI;QAAC,MAAK;;0BACT,qKAAC,iIAAI;0BACF,oDAAyB,+BACxB,qKAAC,kIAAM;oBACL,KAAI;oBACJ,aAAY;oBACZ,UAAS;;;;;;;;;;;0BAIf,qKAAC;;kCACC,qKAAC,iIAAI;;;;;kCACL,qKAAC,uIAAU;;;;;;;;;;;;;;;;;AAInB"}}]
+}

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Balloons from "@/components/Balloons";
+import KarnatakaBanner from "@/components/KarnatakaBanner";
 
 type TimeLeft = {
   days: number;
@@ -60,6 +61,7 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen bg-black text-foreground relative">
+      <KarnatakaBanner />
       <Balloons />
 
       {/* Hero Section - Full viewport height, centered content */}
